@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --base-font-size: 10px;
+  --h1-scale: 5.6;
+  --h1-letter-spacing: -0.48px;
+  --h2-scale: 4.2;
+  --h2-letter-spacing: -0.36px;
+  --h3-scale: 3.4;
+  --h3-letter-spacing: -0.28px;
+  --h4-scale: 2.8;
+  --h4-letter-spacing: -0.24px;
+  --h5-scale: 2.2;
+  --h5-letter-spacing: -0.2px;
+  --h6-scale: 1.6;
+  --h6-letter-spacing: -0.16px;
+  --line-height-multiplier: 1.35;
+  --header-letter-spacing: -0.01rem;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  background-color: #fff;
+  color: #28333e;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: calc(var(--base-font-size) * var(--h1-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h1-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h1-letter-spacing);
+}
+h2 {
+  font-weight: 700;
+  font-size: calc(var(--base-font-size) * var(--h2-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h2-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h2-letter-spacing);
+}
+h3 {
+  font-weight: 700;
+  font-size: calc(var(--base-font-size) * var(--h3-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h3-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h3-letter-spacing);
+}
+h4 {
+  font-size: calc(var(--base-font-size) * var(--h4-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h4-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h4-letter-spacing);
+}
+h5 {
+  font-size: calc(var(--base-font-size) * var(--h5-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h5-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h5-letter-spacing);
+}
+h6 {
+  font-size: calc(var(--base-font-size) * var(--h6-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h6-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h6-letter-spacing);
+}
+
+@layer components {
+  .navigation {
+    @apply h-screen bg-gray-800 w-20 fixed left-0 top-0 flex flex-col shadow-lg m-0;
+  }
+
+  .nav-icon {
+    @apply flex items-center justify-center shadow-lg w-8 h-8 p-2 mx-auto my-2 text-gray-900 rounded-3xl hover:rounded-lg bg-gray-300 hover:bg-gray-500 transition-all cursor-pointer duration-200 ease-linear;
+  }
+}
