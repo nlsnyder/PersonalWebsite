@@ -9,9 +9,19 @@
             applications. I have a passion for web development and designing beautiful user interfaces. Below is some
             more
             information about myself along with my personal projects.</p>
+
         </div>
-        <div class="w-full md:w-2/5 flex items-center md:items-start justify-center order-1 md:order-2">
-          <img class="shadow-3xl w-[175px] h-auto rounded-full" src="/profile-picture.jpeg" alt="Profile picture" />
+        <div class="w-full md:w-2/5 flex flex-col gap-8 items-center justify-center md:justify-start order-1 md:order-2">
+          <img class="shadow-3xl ring-4 ring-white w-[175px] h-auto rounded-full" src="/profile-picture.jpeg"
+            alt="Profile picture" />
+          <div class="flex gap-2 text-white text-base">
+            <a href="https://github.com/nlsnyder" target="_blank"><font-awesome-icon
+                class="w-6 h-6 rounded-full text-gray-600 p-2 bg-white hover:text-[#171515] transition-all ease-in duration-150"
+                :icon="['fab', 'github']"></font-awesome-icon></a>
+            <a href="#"><font-awesome-icon
+                class=" p-2 text-gray-600 bg-white w-6 h-6 rounded-full hover:text-[#0A66C2] transition-all ease-in duration-150"
+                :icon="['fab', 'linkedin']" /></a>
+          </div>
         </div>
       </div>
     </div>
