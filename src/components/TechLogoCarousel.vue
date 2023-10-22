@@ -73,11 +73,6 @@ const logos = ref([
 ]);
 const responsiveOptions = ref([
   {
-    breakpoint: '1199px',
-    numVisible: 4,
-    numScroll: 1
-  },
-  {
     breakpoint: '991px',
     numVisible: 3,
     numScroll: 1

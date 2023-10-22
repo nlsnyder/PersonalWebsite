@@ -1,6 +1,6 @@
 <template>
   <section class="background">
-    <div class="w-[90%] md:w-3/5 mx-auto py-[75px]">
+    <div class="section-container py-[75px]">
       <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-4">
         <div
           class="flex flex-col items-center md:items-start text-center md:text-left w-full md:w-3/5 order-2 md:order-1 gap-4">
@@ -26,16 +26,28 @@
       </div>
     </div>
   </section>
-  <section class="w-[90%] md:w-3/5 mx-auto">
+  <section class="section-container">
     <div class="my-10">
       <h3 class="heading font-medium">My tech stack</h3>
       <TechLogoCarousel />
+    </div>
+  </section>
+  <section class="section-container my-10">
+    <h3 class="heading font-medium">Personal projects</h3>
+    <div class="flex flex-col md:flex-row flex-auto gap-10">
+      <PersonalProjectCard title="Vipex" webLink="https://vipex-f68f1.web.app/"
+        githubLink="https://github.com/nlsnyder/vipex" category="Web Development"
+        description="Manage Your Expenses With Ease" img="vipex" />
+      <PersonalProjectCard title="3 Idiots and a Star Wars Podcast" webLink="https://3idiotssw. com"
+        githubLink="https://github.com/nlsnyder/3-idiots-ts" category="Web Development"
+        description="Official Podcast Website" img="3idiotssw" />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import TechLogoCarousel from './TechLogoCarousel.vue';
+import PersonalProjectCard from './PersonalProjectCard.vue';
 </script>
 
 <style scoped>

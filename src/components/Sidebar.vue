@@ -32,8 +32,18 @@ const toggleNav = () => {
 <style scoped>
 .slide-enter-from,
 .slide-leave-to {
-  opacity: 0;
-  transform: translateX(-100px);
+  scale: 0;
+  transform-origin: top;
+}
+
+@media(min-width: 768px) {
+
+  .slide-enter-from,
+  .slide-leave-to {
+    scale: 1;
+    opacity: 1;
+    transform: translateX(-100px);
+  }
 }
 
 .slide-enter-active,
@@ -43,7 +53,17 @@ const toggleNav = () => {
 
 .slide-enter-to,
 .slide-leave-from {
-  opacity: 1;
-  transform: translateX(0px);
+  scale: 1;
+  transform-origin: top;
+}
+
+@media(min-width: 768px) {
+
+  .slide-enter-to,
+  .slide-leave-from {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0px);
+  }
 }
 </style>

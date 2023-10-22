@@ -10,10 +10,19 @@ import {
   faBars,
   faCircleXmark,
   faSchool,
+  faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faUser, faBars, faCircleXmark, faSchool, faLinkedin, faGithub);
+library.add(
+  faUser,
+  faBars,
+  faCircleXmark,
+  faSchool,
+  faLinkedin,
+  faGithub,
+  faLink
+);
 
 createApp(App)
   .use(router)

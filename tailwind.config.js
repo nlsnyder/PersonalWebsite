@@ -29,6 +29,9 @@ export default {
           900: "#28333e",
         },
       },
+      backgroundImage: {
+        "personal-project": "url('/personal-project-card-background.jpeg')",
+      },
     },
   },
   plugins: [],
